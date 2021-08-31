@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main_div {
+  width: 100%;
+  height: 100vh;
+  background: url('https://wallup.net/wp-content/uploads/2017/03/27/447101-blue-solid_color-digital_art.jpg')
+    no-repeat center;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.center_div {
+  height: 80vh;
+  width: 25%;
+  background: #d2dbdd;
+  background-size: cover;
+  border-radius: 1em;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.2);
+}
+h1 {
+  color: white;
+  background: transparent;
+  background-color: rgb(170, 10, 135);
+  padding: 6px 0 2px 0;
+  margin: 10px 0;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.2);
+}
+input {
+  text-align: center;
+  height: 30px;
+  top: 10px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  font-weight: 500;
+  width: 60%;
+  outline: none;
+  border-bottom: 2px solid rgb(170, 10, 135);
+}
+button {
+  min-height: 40px;
+  width: 45px;
+  border-radius: 50%;
+  background: transparent;
+  background-color: rgb(170, 10, 135);
+  color: #fff;
+  font-size: 40px;
+  border: none;
+  outline: none;
+  margin-left: 10px;
+  text-align: center;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.2);
+}
+button:hover {
+  background-color: green;
+}
+ol {
+  margin-top: 30px;
+}
+ol li {
+  padding-left: 0px;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 500;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  color: rgb(170, 10, 135);
+  text-transform: capitalize;
+}
+.todo-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+}
+.todo-items .fa-times-circle {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #8566aa;
+  border-radius: 50%;
+  margin: 0 15px 0 35px;
+  color: aliceblue;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+.todo-items .fa-times-circle:hover {
+  background-color: red;
+}
+.todo-items .fa-times-circle:hover .list_style {
+  background-color: red;
+}
+@media (max-width: 768px) {
+  .center_div {
+    width: 55%;
+  }
+  .todo-items .fa-times-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 15px 0 15px;
+  }
+  button {
+    margin-left: 5px;
+    min-height: 40px;
+    width: 40px;
+    color: #fff;
+    font-size: 30px;
+  }
+}
